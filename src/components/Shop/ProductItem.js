@@ -16,13 +16,13 @@ const ProductItem = (props) => {
     // and then send Http request
     // fetch('firebase-url', { method: 'POST', body: JSON.stringify(newCart) })
 
-    // dispatch(
-    //   cartActions.addItemToCart({
-    //     id,
-    //     title,
-    //     price,
-    //   })
-    // );
+    dispatch(
+      cartActions.addItemToCart({
+        id,
+        title,
+        price,
+      })
+    );
   };
 
   return (
